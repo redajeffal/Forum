@@ -1,0 +1,333 @@
+body{
+    padding: 15px;
+}
+
+.datagrid table{ 
+    border-collapse: collapse;
+    text-align: left; 
+    width: 100%; 
+    border: 4px solid #3dbcbc; 
+}
+
+.datagrid{
+   font: normal 14px/200% Arial, Helvetica, sans-serif; 
+   background: #fff; 
+   overflow: hidden; 
+	margin-bottom: 30px;
+}
+
+.datagrid table td, .datagrid table th{
+	margin:auto;
+	text-align:center;
+	padding-bottom:0 auto;
+}
+
+.datagrid td p{
+	padding-top:40px;
+}
+
+.datagrid table thead th{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+	background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+	background-color:#006699; color:#FFFFFF; font-size: 13px; font-weight: bold; border-left: 2px solid #0070A8; 
+	text-align: center; 
+	font-size:1.4em;
+} 
+
+.datagrid table tbody td{ 
+    border-left: 2px solid #E1EEF4;
+    font-size: 12px;font-weight: normal;
+    font-size:1.2em;
+}
+
+.datagrid table tbody .alt td{ 
+    background: #E1EEf4;
+}
+
+.datagrid table tbody tr td:last-child ,.datagrid table thead tr th:last-child{ 
+    width: 20%
+}
+
+.datagrid table tfoot td div{ 
+    border-top: 1px solid #006699;background: #E1EEf4;
+}
+
+.datagrid table tfoot td{
+	padding: 0; font-size: 12px 
+}
+
+.datagrid table tfoot td div{ 
+padding: 2px;
+}
+
+.datagrid table tbody tr td a{
+	text-decoration-color:darkblue;
+	color:darkblue;
+}
+
+.accueil{
+    display:flex;
+    height:50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.connexion{
+	display: inline-flex;
+/*    display:flex;*/
+    justify-content:space-between;
+    background-color:#c2e8ea;
+    height:70px;
+	width: 100%;
+    margin-bottom:15px;
+   
+}
+
+.btn{
+    border-radius: 4px;
+    align-items: center;
+}
+
+.btn-success{
+    color: #fff;
+    background-color: #eb661f;
+    border-color: #e5b16b
+}
+
+.btn-success:hover{
+    color: #fff;
+    background-color: #449d44;
+    border-color: #419641
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #025aa5;
+    border-color: #01549b
+}
+
+.btn-primary:hover{
+    color: #fff;
+    background-color: #2087e0;
+    border-color: #0275d8
+}
+
+.ligne-paire{
+    background-color:#d2f4f1;
+}
+
+.ligne-impaire{
+    background-color:#ded9d9;
+
+}
+
+.form-control{
+    display: block;
+	margin: 0 auto;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s
+}
+
+.checkbox{
+    margin-bottom: 0px;
+}
+
+fieldset{
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend{
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+.container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+/*sp fin*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border: 1px solid #dadfe1;
+    height: 30px;
+    line-height: 28px;
+    transition: all ease-in-out 500ms;
+}
+
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+    border: 1px solid #68c3a3;
+    background-color: #c8f7c5;
+}
+
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+    border: 1px solid #eb575b;
+    background-color: #ffcad1;
+}
+
+#img-logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+.img-circle
+{
+	margin:0 auto;
+}
+
+.table {
+width: 100%;
+margin-bottom: 20px;
+background-color: transparent;
+border-collapse: collapse;
+border-spacing: 0;
+display: table;
+}
+
+thead {
+display: table-header-group;
+vertical-align: middle;
+border-color: inherit;
+}
+
+h3 {
+top: 2px;
+position: relative;
+left: 10px;
+display: inline-block;
+margin-right: 3em;
+font-size: 14px;
+font-weight: 600;
+color: #555;
+line-height: 18px;
+text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+body,html{
+	padding-top:0;
+	margin-top:0;
+	}
+
+h2,.accueil h2
+{
+    text-align:center;
+    color:blue;
+    margin:20px;
+}
+
+.listeusager
+{
+		width:500px;;
+}
+
+.usager
+{
+	margin-top:-50px;	
+}
+
+.boutton{
+	
+}
+.datagrid
+{
+	width:100%;
+}
+.footer{
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	background: #c2e8ea;
+}
+form{
+	margin-bottom: 10px;
+	
+}
+.imagelogin{
+	float: right;
+}
+.boutonconextion{
+	display: block;
+	margin: 0 auto;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    color: #464a4c;
+    background-color: lightblue;
+    background-image: none;
+  
+}
+.form-reponse{
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s
+}
+.headerlogin{
+	text-align: center;
+	
+/*    display:flex;*/
+   
+    background-color:#c2e8ea;
+    height:70px;
+	width: 100%;
+    margin-bottom:15px;
+   
+}
